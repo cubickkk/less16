@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0; 
+}
+body {
+    font-family: "Permanent Marker", cursive;
+    text-shadow: 2px 3px 2px white;
+    background-color: cyan;
+    background-repeat: no-repeat;
+    color: pink;
+    padding: 20px;
+}
+/*.container{
+    border: 4px solid red;
+    margin: 120px;
+    background-color: grey;
+    color: black;
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 400px 400px 400px;
+    text-align: center;
+    grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer "
+    ;
+}
+.container div{
+    border: 2px solid #222;
+}
+.header{
+    grid-area: header;
+    background-color: blue;
+}
+.sidebar{
+grid-area: sidebar;
+background-color: red;
+}
+.footer{
+grid-area: footer;
+background-color: green;
+}
+.main{
+grid-area: main;
+background-color: yellow;
+}*/ 
+.container{
+    display: grid;
+    grid-template-areas: 
+    "item1 item1 item1"
+    "item2 item3 item4"
+    "item5 item5 item6"
+    "item7 item7 item6";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    
+}
+.container div{
+    border: 4px solid white;
+}
+.item1{
+    grid-area: item1;
+    padding: 15px;
+}
+.item2{
+    grid-area: item2;
+    width: 425px;
+    height: 600px;
+    background-image: url("./images/london.jpg");
+    font-size: 22px;
+
+}
+.item2 p {
+    background-color: rgba(207, 164, 191, 0.4);
+    width: 100%;
+    height: 100%;
+    color: fbfdbe;
+    border-radius:0 0 60% 0 ;
+    padding: 25px;
+    opacity: 0;
+    transition: opacity 1s linear;
+    color:yellow;
+    
+} 
+.item2:hover p{
+    opacity: 1;
+    border-bottom-color: yellow;
+    border-bottom-style: double;
+    border-bottom-width: 20px;
+}
+.item3{
+    grid-area: item3;
+    width: 425px;
+    height: 600px;
+    background-image: url("./images/paris.jpg");
+}
+.item3 p {
+    background-color: rgba(207, 164, 191, 0.4);
+    width: 100%;
+    height: 100%;
+    color: fbfdbe;
+    border-radius:10% 10% 10% 10% ;
+    padding: 25px;
+    opacity: 0;
+    transition: opacity,border 2s linear;
+    color:yellow;
+    
+} 
+.item3:hover p{
+    opacity: 1;
+    border-color: pink;
+    border-style: double;
+    border-width: 20px;
+}
+.item4{
+    grid-area: item4;
+    padding: 15px;
+    font-size: 30px;
+}
+.item5 p {
+    background-color: rgba(207, 164, 191, 0.4);
+    width: 100%;
+    height: 100%;
+    color: fbfdbe;
+    border-radius:20% 15% 30% 20% ;
+    padding: 25px;
+    opacity: 0;
+    transition: opacity 1s linear;
+    color:yellow;
+    
+} 
+.item5:hover p{
+    opacity: 1;
+    border-bottom-color: yellow;
+    border-bottom-style: double;
+    border-bottom-width: 20px;
+    border-right-color: yellow;
+    border-right-style: double;
+    border-right-width: 20px;
+}
+
+.item5{
+    grid-area: item5;
+    width: 850px;
+    height: 350px;
+    background-image: url("./images/Turtsiya.jpg");
+}
+.item6{
+    grid-area: item6;
+    width: 425px;
+    height: 600px;
+    background-image: url("./images/venice.jpg");
+}
+.item6:hover blockquote{
+    opacity: 1;
+    border-color: yellow;
+    border-style: dashed;
+    border-width: 20px;
+}
+.item6 blockquote {
+    background-color: rgba(207, 164, 191, 0.4);
+    width: 100%;
+    height: 100%;
+    color: fbfdbe;
+    border-radius:0 0 0 0 ;
+    padding: 25px;
+    opacity: 0;
+    transition: opacity 1s linear;
+    color:yellow;
+    
+} 
+.item7{
+    grid-area: item7;
+    padding: 15px;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
